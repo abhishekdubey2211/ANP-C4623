@@ -6,7 +6,23 @@ public class Person
 	private String name;
 	private int age;
 	
-//	creating getters and setters
+	
+	public Person(String name, int age) 
+	{
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+
+
+
+	//	creating getters and setters
 	public String getName() {
 		return name;
 	}
@@ -20,11 +36,6 @@ public class Person
 		this.age = age;
 	}
 	
-	//CREATING display method for formate to display the content
-	public void display() 
-	{
-		System.out.println("Name :"+getName()+"\nAge :"+getAge());
-	}
-}
 
+}
 
