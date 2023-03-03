@@ -1,5 +1,5 @@
 package corejava;
-
+// creating Student class inheriting Person class
 public class Student extends Person
 {
 
@@ -19,26 +19,22 @@ public class Student extends Person
 			}
 
 
-
-			@Override
-				public String toString() {
-					return "Student [studentId=" + studentId + ", major=" + major + "]";
-			}
-
-
-
 		//creating getters and setters
 
-			public int getStudentId() {
+			public int getStudentId() 
+			{
 				return studentId;
 			}
-			public void setStudentId(int studentId) {
+			public void setStudentId(int studentId) 
+			{
 				this.studentId = studentId;
 			}
-			public String getMajor() {
+			public String getMajor() 
+			{
 				return major;
 			}
-			public void setMajor(String major) {
+			public void setMajor(String major) 
+			{
 				this.major = major;
 			}
 			

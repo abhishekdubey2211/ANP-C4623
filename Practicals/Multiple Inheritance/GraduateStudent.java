@@ -1,42 +1,39 @@
 package corejava;
 
 
-
-public class GraduateStudent extends Student{
+//creating GraduateStudent class inheriting Student
+public class GraduateStudent extends Student
+{
 //	fields
 	private String advisor;
 	private String thisisTopic;
 	
 	
 	
-	//creating parameterised constructor
-	public GraduateStudent(String name, int age, int studentId, String major, String advisor, String thisisTopic) {
+	//creating parameterized constructor
+	public GraduateStudent(String name, int age, int studentId, String major, String advisor, String thisisTopic) 
+	{
 		super(name, age, studentId, major);
 		this.advisor = advisor;
 		this.thisisTopic = thisisTopic;
 	}
 
 
-
-	//creating tostring()
-		@Override
-			public String toString() 
-		{
-				return "GraduateStudent [advisor=" + advisor + ", thisisTopic=" + thisisTopic + "]";
-		}
-
-
-	//	ussing gitters and sitters
-	public String getAdvisor() {
+	//	using getters and sitters
+	public String getAdvisor() 
+	{
 		return advisor;
 	}
-	public void setAdvisor(String advisor) {
+	public void setAdvisor(String advisor) 
+	{
 		this.advisor = advisor;
 	}
-	public String getThisisTopic() {
+	public String getThisisTopic() 
+	{
 		return thisisTopic;
 	}
-	public void setThisisTopic(String thisisTopic) {
+	public void setThisisTopic(String thisisTopic) 
+	{
 		this.thisisTopic = thisisTopic;
 	}
 	
