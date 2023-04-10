@@ -1,4 +1,4 @@
-package corejava;
+package Array;
 import java.util.Scanner;
 
  class SingleDimensionalArrayInputExample {
