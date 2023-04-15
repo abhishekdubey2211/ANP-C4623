@@ -1,6 +1,8 @@
 package OOPS;
 import java.util.*;
 
+//Single Level Inheritance
+
 class StudentDetials{
 	private String name;
 	private int age;
@@ -25,24 +27,12 @@ class StudentDetials{
 	public void setAge(int age) {
 		this.age = age;
 	}
-//
-////	creating class constructor
-//	public StudentDetials(String name, int age) {
-//		super();
-//		this.name = name;
-//		this.age = age;
-//	}
-	
+
 }
 
 class StudentSSC_percentage extends StudentDetials
 {
 	int percentage;
-//	
-//	public StudentSSC_percentage(String name, int age,int percentage) {
-//		super(name, age);
-//		this.percentage = percentage;
-//	}
 
 	public int getPercentage() {
 		return percentage;
@@ -62,7 +52,7 @@ public class Students {
 		StudentSSC_percentage sd = new StudentSSC_percentage();
 		
 		System.out.println("Enter the name of Student = ");
-		String name = sc.nextLine();
+		String name = sc.nextLine(); // nextLine will then more then one word as an input
 		System.out.println("Enter the age of Student = ");
 		int age = sc.nextInt();
 		System.out.println("Enter your SSC Percentage  = ");
