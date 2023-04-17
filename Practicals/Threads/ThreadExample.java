@@ -36,7 +36,7 @@ class ThreadExample
 		//wait for all threads to finish
 		try
 		{
-		   t1.join();
+		   t1.join();    // to wait for a thread to finish
 		   t2.join();
 		   t3.join();
 		}
