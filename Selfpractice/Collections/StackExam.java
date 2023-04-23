@@ -3,7 +3,7 @@ import java.util.Stack;
 public class StackExam {
 
 	public static void main(String[] args) {
-		Stack<String> name = new Stack<>();   //LIFO
+		Stack<String> name = new Stack<>();   //LIFO  example balti me 4 football
 		name.add("ABHISHEK");
 		name.add("SACHIN");
 		name.add("AAKASH");
