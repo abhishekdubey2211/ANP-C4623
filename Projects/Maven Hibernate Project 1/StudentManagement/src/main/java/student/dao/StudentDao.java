@@ -77,6 +77,8 @@ public class StudentDao
 		{
 			tx = session.beginTransaction();
 			student = session.get(Student.class,id);
+            System.out.println("student id = "+student.getId()+" \nstudent first name = "+student.getFname()+" \nstudent last name = "+student.getLname()+" \nstudent Address  = "+student.getAddress());
+
 			tx.commit();
 		}catch(Exception e) {
 			if(tx!= null) 
