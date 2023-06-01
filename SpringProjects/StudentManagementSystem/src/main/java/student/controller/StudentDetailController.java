@@ -45,6 +45,7 @@ public class StudentDetailController {
 		return studentDetailService.getStudentDetailById(id);
 	}
 	
+	
 	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id) {

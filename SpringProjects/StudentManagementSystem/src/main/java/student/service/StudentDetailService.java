@@ -34,9 +34,9 @@ public class StudentDetailService
 	{
 		StudentDetail existingStudentDetail = studentDetailRepository.findById(id).get();
 		existingStudentDetail.setId(studentDetail.getId());
-		existingStudentDetail.setHSCpercent(studentDetail.getHSCpercent());
-		existingStudentDetail.setSSCpercent(studentDetail.getSSCpercent());
-		existingStudentDetail.setSalary(studentDetail.getSalary());
+		existingStudentDetail.setCgpa(studentDetail.getCgpa());
+		existingStudentDetail.setCourse(studentDetail.getCourse());
+
 		return studentDetailRepository.save(existingStudentDetail);
 	}
 	

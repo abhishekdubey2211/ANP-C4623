@@ -1,9 +1,12 @@
 package student.entity;
 
+import java.util.List;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
 
 import lombok.*;
 
@@ -31,7 +34,7 @@ public class Student
 	
 	@NotNull
 	@Email
-	@Column(name="Email_ID")
+	@Column(name="Email_ID",unique=true)
 	private String semail;
 	
 	@NotNull
@@ -39,7 +42,19 @@ public class Student
 	@Column(name="Contact_NO")
 	private long contact;
 	
-	@OneToOne(fetch = FetchType.LAZY,cascade =  CascadeType.ALL,mappedBy = "student")
-	@JoinColumn(name="Student_detail_id")
+	
+	@OneToOne(targetEntity =StudentDetail.class,cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	private StudentDetail studentDetail;
+	
+
 }
+
+
+
+
+
+
+//@OneToOne(cascade =  CascadeType.ALL,mappedBy = "student")
+////@OneToOne(cascade=CascadeType.ALL)
+//@JoinColumn(name="Student_detail_id")
+//private StudentDetail studentDetail;

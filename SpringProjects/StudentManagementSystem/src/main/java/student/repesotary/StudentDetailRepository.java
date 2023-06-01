@@ -8,6 +8,5 @@ import student.entity.StudentDetail;
 
 @Repository
 public interface StudentDetailRepository extends JpaRepository<StudentDetail , Long>{
-//	List<StudentDetail> findByid(String id);
 
 }

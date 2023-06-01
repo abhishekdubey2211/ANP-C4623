@@ -7,5 +7,5 @@ import student.entity.Student;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long>{
-//	List<Student> findByid(String id);
+	public List<Student> StudentBySemail(String semail);
 }

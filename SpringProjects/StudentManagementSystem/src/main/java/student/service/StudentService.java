@@ -1,9 +1,9 @@
 package student.service;
 
 import java.util.List;
+import student.entity.*;
 import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
-import student.entity.Student;
 import student.repesotary.StudentRepository;
 
 //@Service allows to add business functionalities in your application
@@ -30,6 +30,8 @@ public class StudentService
 		-> new RuntimeException("Student found for the id "+id));	
 	}
 	
+	
+	
 	public Student updateStudent(Student student, Long id) 
 	{
 		Student existingStudent = studentRepository.findById(id).get();
@@ -37,6 +39,7 @@ public class StudentService
 		existingStudent.setFname(student.getFname());
 		existingStudent.setLname(student.getLname());
 		existingStudent.setContact(student.getContact());
+		existingStudent.setSemail(student.getSemail());
 		return studentRepository.save(existingStudent);
 	}
 	
@@ -45,4 +48,6 @@ public class StudentService
 		studentRepository.delete(existingStudent);
 		
 	}
+
+	
 }
